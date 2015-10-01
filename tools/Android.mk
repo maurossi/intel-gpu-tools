@@ -30,10 +30,10 @@ define add_tool
     LOCAL_MODULE := $1_tool
     LOCAL_MODULE_TAGS := optional
 
-    LOCAL_STATIC_LIBRARIES := libintel_gpu_tools
+    LOCAL_STATIC_LIBRARIES := libintel_gpu_tools \
+                              libpciaccess\
 
-    LOCAL_SHARED_LIBRARIES := libpciaccess  \
-                              libdrm        \
+    LOCAL_SHARED_LIBRARIES := libdrm        \
                               libdrm_intel
 
     # Tools dir on host
