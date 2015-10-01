@@ -28,9 +28,9 @@ LOCAL_CFLAGS += -DANDROID -DHAVE_LINUX_KD_H
 LOCAL_CFLAGS += -std=gnu99 -UNDEBUG
 LOCAL_MODULE:= libintel_gpu_tools
 
-LOCAL_SHARED_LIBRARIES := libpciaccess  \
-			  libdrm        \
-			  libdrm_intel
+LOCAL_STATIC_LIBRARIES := libpciaccess
+
+LOCAL_SHARED_LIBRARIES := libdrm libdrm_intel
 
 ifeq ("${ANDROID_HAS_CAIRO}", "1")
     skip_lib_list :=
