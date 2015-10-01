@@ -34,8 +34,8 @@ IGT_LOCAL_C_INCLUDES = $(LOCAL_PATH)/../lib
 IGT_LOCAL_C_INCLUDES += ${ANDROID_BUILD_TOP}/external/PRIVATE/drm/include/drm
 
 # set local libraries
-IGT_LOCAL_STATIC_LIBRARIES := libintel_gpu_tools
-IGT_LOCAL_SHARED_LIBRARIES := libpciaccess libdrm libdrm_intel
+IGT_LOCAL_STATIC_LIBRARIES := libintel_gpu_tools libpciaccess
+IGT_LOCAL_SHARED_LIBRARIES := libdrm libdrm_intel
 
 $(foreach item,$(check_PROGRAMS),$(eval $(call add_test,$(item))))
 
