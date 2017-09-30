@@ -173,6 +173,7 @@ test_progs = [
 	'kms_frontbuffer_tracking',
 	'kms_hdmi_inject',
 	'kms_invalid_dotclock',
+	'kms_lease',
 	'kms_legacy_colorkey',
 	'kms_mmap_write_crc',
 	'kms_mmio_vs_cs_flip',
