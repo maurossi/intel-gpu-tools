@@ -397,6 +397,7 @@ igt_plane_t *igt_output_get_plane(igt_output_t *output, int plane_idx);
 igt_plane_t *igt_output_get_plane_type(igt_output_t *output, int plane_type);
 igt_output_t *igt_output_from_connector(igt_display_t *display,
     drmModeConnector *connector);
+igt_pipe_t *igt_output_get_driving_pipe(igt_output_t *output);
 igt_plane_t *igt_pipe_get_plane_type(igt_pipe_t *pipe, int plane_type);
 bool igt_pipe_get_property(igt_pipe_t *pipe, const char *name,
 			   uint32_t *prop_id, uint64_t *value,

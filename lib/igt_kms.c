@@ -1983,7 +1983,7 @@ report_dup:
 	}
 }
 
-static igt_pipe_t *igt_output_get_driving_pipe(igt_output_t *output)
+igt_pipe_t *igt_output_get_driving_pipe(igt_output_t *output)
 {
 	igt_display_t *display = output->display;
 	enum pipe pipe;

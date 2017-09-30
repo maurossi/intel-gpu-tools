@@ -195,6 +195,7 @@ test_progs = [
 	'kms_tv_load_detect',
 	'kms_universal_plane',
 	'kms_vblank',
+	'kms_sequence',
 	'meta_test',
 	'perf',
 	'pm_backlight',
